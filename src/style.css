@@ -31,14 +31,13 @@ body {
 
 /* --- Global Typography --- */
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   color: var(--text-black);
   letter-spacing: -0.02em;
-  margin: 0;
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.5rem;
 }
 
 h1 .suite {
@@ -186,9 +185,9 @@ input:checked + .slider:before {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 0rem;
   background-color: #fff;
-  padding: 30px 42px 29px 28px;
+  padding: 15px 20px 15px;
   border-radius: 15px;
   border: #E1E8F1 1px solid;
   position: relative;
@@ -197,8 +196,8 @@ input:checked + .slider:before {
 
 /* --- Icon Scopes --- */
 .lottie-icon {
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
 }
 
 /* --- Tutorial Box --- */

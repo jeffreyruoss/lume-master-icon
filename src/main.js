@@ -67,4 +67,7 @@ loadLogo('v1-container', '/lottie-icon.json')
 loadLogo('v2-container', '/lottie-icon-v2.json')
 loadLogo('v3-container', '/lottie-icon-v3.json')
 loadLogo('v4-container', '/lottie-icon-v4.json')
+loadLogo('v5-container', '/lottie-icon-v5.json')
+loadLogo('v6-container', '/lottie-icon-v6.json')
+loadLogo('v7-container', '/lottie-icon-v7.json')
 
