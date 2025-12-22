@@ -2,7 +2,7 @@ import './style.css'
 import lottie from 'lottie-web'
 
 const animations = []
-let isLooping = false
+let isLooping = localStorage.getItem('lume-loop-enabled') === 'true'
 
 const loadLogo = (containerId, animationPath) => {
   const container = document.getElementById(containerId)
@@ -11,7 +11,7 @@ const loadLogo = (containerId, animationPath) => {
   const anim = lottie.loadAnimation({
     container: container,
     renderer: 'svg',
-    loop: false,
+    loop: isLooping,
     autoplay: true,
     path: animationPath
   })
@@ -31,6 +31,7 @@ const replayAll = () => {
 
 const toggleLoopAll = (e) => {
   isLooping = e.target.checked
+  localStorage.setItem('lume-loop-enabled', isLooping)
 
   animations.forEach(anim => {
     anim.loop = isLooping
@@ -40,8 +41,26 @@ const toggleLoopAll = (e) => {
   })
 }
 
+const loopToggle = document.getElementById('loop-toggle')
+if (loopToggle) {
+  loopToggle.checked = isLooping
+}
+
 document.getElementById('replay-btn').addEventListener('click', replayAll)
-document.getElementById('loop-toggle').addEventListener('change', toggleLoopAll)
+loopToggle.addEventListener('change', toggleLoopAll)
+
+// Tutorial Logic
+const tutorialBox = document.getElementById('tutorial-box')
+const dismissBtn = document.getElementById('dismiss-tutorial')
+
+if (!localStorage.getItem('lume-tutorial-dismissed')) {
+  tutorialBox.classList.remove('hidden')
+}
+
+dismissBtn.addEventListener('click', () => {
+  tutorialBox.classList.add('hidden')
+  localStorage.setItem('lume-tutorial-dismissed', 'true')
+})
 
 console.log('Loading Lottie animations...')
 loadLogo('v1-container', '/lottie-icon.json')

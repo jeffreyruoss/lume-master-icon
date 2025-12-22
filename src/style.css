@@ -192,6 +192,83 @@ input:checked + .slider:before {
   height: 120px;
 }
 
+/* --- Tutorial Box --- */
+.tutorial-box {
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--brand-blue);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 280px;
+  z-index: 1100;
+  border: none;
+  text-align: left;
+  animation: fadeInDown 0.4s ease-out;
+}
+
+.tutorial-box.hidden {
+  display: none;
+}
+
+.tutorial-arrow {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid var(--brand-blue);
+}
+
+.tutorial-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.tutorial-content p {
+  margin: 0 0 16px 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#dismiss-tutorial {
+  background: white;
+  color: var(--brand-blue);
+  border: none;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: opacity 0.2s;
+}
+
+#dismiss-tutorial:hover {
+  opacity: 0.9;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+
 
 
 
