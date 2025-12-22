@@ -47,10 +47,17 @@ h1 .suite {
 }
 
 .version-label {
-  font-size: 1.2rem;
-  color: #888;
-  margin-bottom: 1rem;
-  font-weight: 400;
+  background: #8BA2BB;
+  color: white;
+  padding: 6px 16px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 0;
+  z-index: 2;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
 }
 
 /* --- Layout Sections --- */
@@ -64,7 +71,7 @@ h1 .suite {
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 6rem;
+  gap: 4rem;
 }
 
 .controls-bar {
@@ -184,6 +191,8 @@ input:checked + .slider:before {
   padding: 30px 42px 29px 28px;
   border-radius: 15px;
   border: #E1E8F1 1px solid;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
 }
 
 /* --- Icon Scopes --- */

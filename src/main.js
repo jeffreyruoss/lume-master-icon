@@ -65,4 +65,5 @@ dismissBtn.addEventListener('click', () => {
 console.log('Loading Lottie animations...')
 loadLogo('v1-container', '/lottie-icon.json')
 loadLogo('v2-container', '/lottie-icon-v2.json')
+loadLogo('v3-container', '/lottie-icon-v3.json')
 
