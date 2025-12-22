@@ -7,6 +7,50 @@
   </head>
   <body>
     <div id="app">
+      <div class="controls-bar">
+        <div class="controls-content">
+          <button id="replay-btn" title="Replay All">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+              <path d="M3 3v5h5" />
+            </svg>
+            <span>Replay All</span>
+          </button>
+
+          <div class="toggle-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="m17 2 4 4-4 4" />
+              <path d="M3 11v-1a4 4 0 0 1 4-4h14" />
+              <path d="m7 22-4-4 4-4" />
+              <path d="M21 13v1a4 4 0 0 1-4 4H3" />
+            </svg>
+            <span>Loop</span>
+            <label class="switch">
+              <input type="checkbox" id="loop-toggle" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
       <!-- Version 1 -->
       <div class="logo-section">
         <div class="version-label">Version 1</div>
