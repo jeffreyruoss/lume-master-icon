@@ -27,21 +27,21 @@ body {
   padding: 2rem;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
+  gap: 0rem;
 }
 
 #lottie-container {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 2rem;
+  width: 120px;
+  height: 120px;
 }
 
 h1 {
-  font-size: 3.5rem;
-  font-weight: 800;
+  font-size: 3rem;
+  font-weight: 600;
   color: #000;
   letter-spacing: -0.02em;
   margin: 0;
@@ -51,7 +51,7 @@ h1 {
 }
 
 h1 .suite {
-  font-weight: 400;
+  font-weight: 200;
   color: #1F65F4;
 }
 
