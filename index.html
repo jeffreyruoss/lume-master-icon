@@ -2,65 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LumeMaster Icon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="app">
       <div class="controls-bar">
         <div class="controls-content">
-          <button id="replay-btn" title="Replay All">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-              <path d="M3 3v5h5" />
-            </svg>
-            <span>Replay All</span>
+          <button id="replay-btn" class="control-btn">
+            ↺ Replay All
           </button>
-
           <div class="toggle-container">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="m17 2 4 4-4 4" />
-              <path d="M3 11v-1a4 4 0 0 1 4-4h14" />
-              <path d="m7 22-4-4 4-4" />
-              <path d="M21 13v1a4 4 0 0 1-4 4H3" />
-            </svg>
-            <span>Loop</span>
+            <span class="label">Loop</span>
             <label class="switch">
-              <input type="checkbox" id="loop-toggle" />
+              <input type="checkbox" id="loop-toggle">
               <span class="slider round"></span>
             </label>
           </div>
         </div>
+      </div>
 
-        <div id="tutorial-box" class="tutorial-box hidden">
-          <div class="tutorial-arrow"></div>
-          <div class="tutorial-content">
-            <h3>Quick Controls</h3>
-            <p>
-              Use these buttons to replay the animations or toggle continuous
-              looping.
-            </p>
-            <button id="dismiss-tutorial">Got it!</button>
-          </div>
-        </div>
+      <div id="tutorial-box" class="tutorial-box hidden">
+        <p>👋 Welcome! These are the Lottie-animated concepts for the <strong>LumeMaster Suite</strong> logo.</p>
+        <button id="dismiss-tutorial" class="dismiss-btn">Got it</button>
       </div>
 
       <div class="logos-grid">
@@ -150,168 +118,6 @@
           <div class="version-label">Version 10</div>
           <div class="logo-row">
             <div id="v10-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 11 -->
-        <div class="logo-section">
-          <div class="version-label">Version 11</div>
-          <div class="logo-row">
-            <div id="v11-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 12 -->
-        <div class="logo-section">
-          <div class="version-label">Version 12</div>
-          <div class="logo-row">
-            <div id="v12-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 13 -->
-        <div class="logo-section">
-          <div class="version-label">Version 13</div>
-          <div class="logo-row">
-            <div id="v13-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 14 -->
-        <div class="logo-section">
-          <div class="version-label">Version 14</div>
-          <div class="logo-row">
-            <div id="v14-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 15 -->
-        <div class="logo-section">
-          <div class="version-label">Version 15</div>
-          <div class="logo-row">
-            <div id="v15-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 16 -->
-        <div class="logo-section">
-          <div class="version-label">Version 16</div>
-          <div class="logo-row">
-            <div id="v16-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 17 -->
-        <div class="logo-section">
-          <div class="version-label">Version 17</div>
-          <div class="logo-row">
-            <div id="v17-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 18 -->
-        <div class="logo-section">
-          <div class="version-label">Version 18</div>
-          <div class="logo-row">
-            <div id="v18-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 19 -->
-        <div class="logo-section">
-          <div class="version-label">Version 19</div>
-          <div class="logo-row">
-            <div id="v19-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 20 -->
-        <div class="logo-section">
-          <div class="version-label">Version 20</div>
-          <div class="logo-row">
-            <div id="v20-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 21 -->
-        <div class="logo-section">
-          <div class="version-label">Version 21</div>
-          <div class="logo-row">
-            <div id="v21-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 22 -->
-        <div class="logo-section">
-          <div class="version-label">Version 22</div>
-          <div class="logo-row">
-            <div id="v22-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 23 -->
-        <div class="logo-section">
-          <div class="version-label">Version 23</div>
-          <div class="logo-row">
-            <div id="v23-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 24 -->
-        <div class="logo-section">
-          <div class="version-label">Version 24</div>
-          <div class="logo-row">
-            <div id="v24-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 25 -->
-        <div class="logo-section">
-          <div class="version-label">Version 25</div>
-          <div class="logo-row">
-            <div id="v25-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 26 -->
-        <div class="logo-section">
-          <div class="version-label">Version 26</div>
-          <div class="logo-row">
-            <div id="v26-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 27 -->
-        <div class="logo-section">
-          <div class="version-label">Version 27</div>
-          <div class="logo-row">
-            <div id="v27-container" class="lottie-icon"></div>
-            <h1>LumeMaster <span class="suite">Suite</span></h1>
-          </div>
-        </div>
-
-        <!-- Version 28 -->
-        <div class="logo-section">
-          <div class="version-label">Version 28</div>
-          <div class="logo-row">
-            <div id="v28-container" class="lottie-icon"></div>
             <h1>LumeMaster <span class="suite">Suite</span></h1>
           </div>
         </div>
