@@ -240,16 +240,20 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 360px;
+  height: 90px;
+  min-height: 90px;
+  max-height: 90px;
   gap: 0rem;
   background-color: #fff;
-  padding: 0 18px 0 0;
+  padding: 0;
   border-radius: 12px;
   border: #E1E8F1 1px solid;
   position: relative;
   box-shadow: 0 10px 30px rgba(0,0,0,0.04);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
 }
 
 .logo-row:hover {
@@ -258,14 +262,18 @@ input:checked + .slider:before {
 }
 
 .logo-row.bottom-aligned {
-  align-items: flex-end;
+  align-items: center;
 }
-.logo-row.bottom-aligned .lottie-icon {
-  margin-bottom: -10px; /* Fine tune to confirm visual alignment */
-}
+
 .logo-row.bottom-aligned h1 {
-    transform: translateY(-5px); /* Move text down or up */
-    margin-left: -5px; /* Reduce space */
+  align-self: flex-end;
+  padding-bottom: 18px;
+  margin-left: -5px;
+}
+
+.logo-row h1 {
+  margin: 0;
+  padding-right: 18px;
 }
 
 /* --- Icon Scopes --- */
