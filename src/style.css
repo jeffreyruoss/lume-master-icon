@@ -85,10 +85,42 @@ h1 .suite {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.5rem;
   width: 100%;
-  margin-top: 3rem;
-  padding-bottom: 4rem;
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.section-container {
+  width: 100%;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #4A5568;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: var(--brand-blue);
+  border-radius: 2px;
 }
 
 @media (min-width: 768px) {
@@ -223,6 +255,17 @@ input:checked + .slider:before {
 .logo-row:hover {
   transform: translateY(-2px);
   box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+.logo-row.bottom-aligned {
+  align-items: flex-end;
+}
+.logo-row.bottom-aligned .lottie-icon {
+  margin-bottom: -10px; /* Fine tune to confirm visual alignment */
+}
+.logo-row.bottom-aligned h1 {
+    transform: translateY(-5px); /* Move text down or up */
+    margin-left: -5px; /* Reduce space */
 }
 
 /* --- Icon Scopes --- */

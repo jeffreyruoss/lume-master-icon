@@ -1,5 +1,5 @@
 import './style.css'
-import lottie from 'lottie-web'
+import lottie from 'lottie-web/build/player/lottie_svg'
 
 const animations = []
 let isLooping = localStorage.getItem('lume-loop-enabled') === 'true'
@@ -68,8 +68,11 @@ loadLogo('v2-container', '/lottie-icon-v2.json')
 loadLogo('v3-container', '/lottie-icon-v3.json')
 loadLogo('v4-container', '/lottie-icon-v4.json')
 loadLogo('v5-container', '/lottie-icon-v5.json')
-loadLogo('v6-container', '/lottie-icon-v6.json')
+loadLogo('v6-container', '/lottie-icon-v6-waveform.json')
 loadLogo('v7-container', '/lottie-icon-v7.json')
 loadLogo('v8-container', '/lottie-icon-v8.json')
-loadLogo('v9-container', '/lottie-icon-v9.json')
 loadLogo('v10-container', '/lottie-icon-v10.json')
+loadLogo('v11-container', '/lottie-icon-v11.json')
+loadLogo('v12-container', '/lottie-icon-v12.json')
+loadLogo('v13-container', '/lottie-icon-v13.json')
+loadLogo('v14-container', '/lottie-icon-v14.json')
